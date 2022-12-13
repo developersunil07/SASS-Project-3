@@ -1,0 +1,133 @@
+.banner{
+    background-image:url("../img/banner.png");
+    background-size:cover;
+    width:100%;
+    background-position:top;
+    object-fit: cover;
+    padding-bottom: 50px;
+
+    
+
+    .inner{
+        width:950px;
+        padding:20px;
+        margin:0 auto;          
+        }
+    
+
+    .flex-box{
+        @include flex-box();
+    }
+
+    nav{
+        .logo{
+            span{
+                color:$comman-color;
+            }
+        }
+
+        .menu{
+            a{
+                color:#fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .banner-text{
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top:280px;
+        margin-bottom: 50px;
+
+
+        h1{
+            font-size:40px;
+            
+        }
+
+        p{
+            color:$paragraph-color;
+            margin-top:0px;
+            line-height:30px;
+
+        }
+
+        
+    }
+
+    @media only screen and (max-width:950px){
+        background-image:url("../img/banner.png");
+        background-size:cover;
+        width:100%;
+        background-position:top;
+        background-repeat: no-repeat;
+        padding-bottom:20px;
+
+    
+        
+    
+        .inner{
+            width:90%;
+            padding:20px;
+            margin:0 auto;          
+            }
+        
+    
+        .flex-box{
+            @include flex-box();
+        }
+    
+        nav{
+            .logo{
+                margin:0;
+                span{
+                    color:$comman-color;
+                }
+
+                h3{
+                    font-size:12px;
+                 
+                }
+            }
+    
+            .menu{
+                margin:0;
+
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                    font-size:12px;
+                }
+            }
+        }
+    
+        .banner-text{
+            width:100%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top:70px;
+            padding-bottom: 30px;
+    
+    
+            h1{
+                font-size:20px;
+                
+            }
+    
+            p{
+                color:$paragraph-color;
+                font-size:8px;
+                margin-top:10px;
+                line-height:10px;
+    
+            }
+    
+            
+        }
+
+    }
+
+}
+

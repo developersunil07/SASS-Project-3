@@ -1,0 +1,84 @@
+// variables
+$comman-color:#3399cc;
+$paragraph-color:#cccccc;
+$font: 'Trocchi', serif;   
+
+// mixins
+@mixin inner{
+    width:950px;
+    padding:20px;
+    margin:0 auto;
+    @media only screen and (max-width:700px){
+        width:100%;
+        padding:0px;
+        margin:0 auto;
+    }
+
+}
+
+@mixin flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+// partial and import
+@import"banner";
+@import"section-1";
+@import"section-2";
+@import"section-3";
+@import"footer";
+
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family:$font;
+    color:#fff;
+
+    }
+
+p{
+    color: $paragraph-color;
+}
+
+.my-button{
+    border:0;
+    background-color: $comman-color;
+    width:120px;
+    height:40px;
+    margin-top:30px;
+    border-radius:2px;
+}
+
+@media only screen and (max-width:950px){
+
+    *{
+        margin:0px;
+        padding:0px;
+        font-family:$font;
+        color:#fff;
+        // border: 1px solid red;
+    }
+
+
+    .my-button{
+        border:0;
+        background-color: $comman-color;
+        width:80px;
+        height:25px;
+        margin-top:10px;
+        border-radius:2px;
+        font-size:12px;
+    }
+
+    p{
+        color: $paragraph-color;
+    }
+
+    .inner{
+       width: 100%;
+    }
+    
+    
+}
